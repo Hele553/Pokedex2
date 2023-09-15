@@ -104,3 +104,99 @@ body{
         margin-right: 10px;
     }
 }
+@media screen and (max-width: 999px) {
+    .contLogo{
+        height: 100px;
+        width: 100%;
+        display: inline;
+        background-image: url(Pokédex_logo.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 20px 0px;
+    }
+    .container{
+        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    [class^="card"]{
+        height: 275px;
+        width: 170px;
+        border-radius: 12px;
+        box-shadow: 3px 3px rgba(0, 0, 0, 0.315);
+        margin: 8.75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+        transition: all .2s ease;
+    }
+    .card:hover{
+        transform: translateY(-7.5px);
+    }
+    .card img{
+        height: 125px;
+        width: 125px;
+        margin-top: 5px;
+    } 
+    .view1{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .3s ease-out;
+        overflow: hidden;
+    }
+    .view2{
+        height: 0%;
+        overflow: hidden;
+        width: 100%;
+        transition: all .3s ease-out;
+    }
+    .card:hover .view1{
+        height: 49%;
+    }
+    .card:hover .view2{
+        height: 51%;
+    }
+    .card:hover .view1 .id{
+        visibility: hidden;
+    }
+    .id{
+        font-size: 12.5px;
+        padding: 4px 7.5px;
+        border-radius: 10px;
+        margin: 10px 0px;
+        transition: all .3s ease-out;
+    }
+    .name{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .type{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .contname2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .list{
+        font-size: 15px;
+        padding: 5px 5px 0px 5px;
+    }
+    .date{
+        position: absolute;
+        bottom: -100%;
+        right: 0px;
+        margin-right: 10px;
+    }
+}
